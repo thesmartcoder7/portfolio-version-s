@@ -1,6 +1,72 @@
-/* resets */
+/* - - - - - browser resets - - - - - */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* - - - - - font declaration - - - - - */
+@font-face {
+    font-family: "Cantarell";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/cantarell-v13-latin-regular.woff2") format("woff2"),
+        url("../fonts/cantarell-v13-latin-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Cantarell";
+    font-style: bold;
+    font-weight: 700;
+    src: url("../fonts/cantarell-v13-latin-700.woff2") format("woff2"),
+        url("../fonts/cantarell-v13-latin-700.woff") format("woff");
+}
+
+body {
+    background-color: #191a1f;
+    font-family: "Cantarell";
+}
+
+main {
+    width: 100%;
+    height: auto;
+    padding: 3% 10%;
+}
+
+/* - - - - - hero section styling - - - - - */
+#hero {
+    width: 100%;
+    height: auto;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo h1 a {
+    color: #009ff6;
+    font-size: 3.5vw;
+    text-decoration: none;
+}
+
+header .logo h1 .m {
+    color: #707070;
+}
+
+header .navlinks ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+header .navlinks ul li {
+    color: #fff;
+    margin: 0 10%;
+}
+
+header .navlinks ul li a {
+    text-decoration: none;
+    color: #fff;
 }
