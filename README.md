@@ -1,5 +1,7 @@
 # Portfolio Landing page
 
+By: Samuel Martins
+
 ## Description
 
 This is a basic landing page for a portfolio. The goal of this project was to come up with something simple yet elegant to showcase work done for clients.
