@@ -434,6 +434,7 @@ header .navlinks ul li a {
 
 #about .experience .tabs {
     padding-left: 5%;
+    display: flex;
 }
 
 #about .experience .tabs ul {
@@ -451,6 +452,7 @@ header .navlinks ul li a {
 
 #about .experience .tabs ul li .link {
     position: relative;
+    font-size: 0.8vw;
     border-radius: 1.5vw 0 0 1.5vw;
     padding: 10%;
     color: #dcdddd;
@@ -481,13 +483,23 @@ header .navlinks ul li a {
 
 .Crescent360,
 .Icreations,
-.IamBand,
-.Freelance {
+.IamBrand {
     display: none;
 }
 
 .active-description {
     width: 60%;
+    padding-left: 5%;
     display: flex;
     flex-direction: column;
+}
+
+#about .experience .active-description h3 {
+    font-size: 0.9vw;
+}
+
+#about .experience .active-description p {
+    color: #dcdddd;
+    font-size: 0.8vw;
+    line-height: 1.5vw;
 }
