@@ -2,6 +2,8 @@
 
 By: Samuel Martins
 
+![Project Image](assets/images/readme.png)
+
 ## Description
 
 This is a basic landing page for a portfolio. The goal of this project was to come up with something simple yet elegant to showcase work done for clients.

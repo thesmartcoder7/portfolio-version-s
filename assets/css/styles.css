@@ -50,7 +50,7 @@
 
 body {
     font-family: "Cantarell";
-    background-image: url("../images/background.png");
+    background-image: url("../images/background1.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -82,7 +82,7 @@ header .logo h1 a {
 }
 
 header .logo h1 .m {
-    color: #707070;
+    color: #dcdddd;
 }
 
 header .navlinks ul {
@@ -99,7 +99,7 @@ header .navlinks ul li {
 
 header .navlinks ul li a {
     text-decoration: none;
-    color: #707070;
+    color: #dcdddd;
 }
 
 .navlinks ul li a:hover,
@@ -118,21 +118,40 @@ header .navlinks ul li a {
 }
 
 .hero-content .text {
-    width: 50%;
+    width: 40%;
 }
 
 .hero-content .text h2 {
     font-family: "Montserrat";
     letter-spacing: 0.1vw;
-    color: #707070;
-    font-size: 1.5vw;
+    color: #dcdddd;
+    font-size: 2vw;
+    padding-bottom: 5%;
 }
-.hero-content .text h3 {
+.hero-content .text p {
     font-family: "Montserrat";
-    font-weight: 900;
-    color: #707070;
-    line-height: 4vw;
-    font-size: 4vw;
+    color: #dcdddd;
+    line-height: 1.6vw;
+    font-size: 0.9vw;
+}
+
+.hero-content .text .cta {
+    width: 80%;
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-content .text .cta button {
+    margin-right: 10%;
+    background-color: #009ff6;
+    color: #fff;
+    font-size: 0.8vw;
+    border-radius: 0.2vw;
+    outline: none;
+    border: none;
+    padding: 3% 6%;
 }
 
 .hero-content .image {
@@ -242,8 +261,6 @@ header .navlinks ul li a {
     width: 5vw;
     height: 5vw;
     background-color: #121317;
-    /* background-color: rgba(255, 255, 255, 0); */
-    /* backdrop-filter: blur(0.5vw); */
 }
 
 .hero-content .image .tech svg {
