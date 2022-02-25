@@ -100,6 +100,7 @@ header .navlinks ul li {
 header .navlinks ul li a {
     text-decoration: none;
     color: #dcdddd;
+    font-size: 0.9vw;
 }
 
 .navlinks ul li a:hover,
@@ -121,6 +122,27 @@ header .navlinks ul li a {
     width: 40%;
 }
 
+.hero-content .text .intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-content .text .intro hr {
+    display: inline-block;
+    width: 2vw;
+    outline: none;
+    border: none;
+    height: 0.1vw;
+    background-color: #009ff6;
+}
+
+.hero-content .text span {
+    color: #dcdddd;
+    margin-left: 2%;
+    font-size: 1vw;
+}
+
 .hero-content .text h2 {
     font-family: "Montserrat";
     letter-spacing: 0.1vw;
@@ -135,6 +157,11 @@ header .navlinks ul li a {
     font-size: 0.9vw;
 }
 
+.hero-content .text a {
+    text-decoration: none;
+    color: #009ff6;
+}
+
 .hero-content .text .cta {
     width: 80%;
     margin-top: 8%;
@@ -143,7 +170,7 @@ header .navlinks ul li a {
     justify-content: flex-start;
 }
 
-.hero-content .text .cta button {
+.hero-content .text .cta a {
     margin-right: 10%;
     background-color: #009ff6;
     color: #fff;
@@ -260,7 +287,7 @@ header .navlinks ul li a {
     border-radius: 50%;
     width: 5vw;
     height: 5vw;
-    background-color: #121317;
+    background-color: #1b1d22;
 }
 
 .hero-content .image .tech svg {
