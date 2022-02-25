@@ -535,6 +535,7 @@ header .navlinks ul li a {
     width: 45%;
     border: 0.1vw solid #494949;
     transform: rotate(10deg);
+    backdrop-filter: blur(0.1vw);
 }
 
 #portfolio .sample-product-1 .img {
@@ -542,6 +543,7 @@ header .navlinks ul li a {
     width: 45%;
     border: 0.1vw solid #494949;
     transform: rotate(10deg);
+    backdrop-filter: blur(0.1vw);
 }
 
 #portfolio .sample-product .img img {
