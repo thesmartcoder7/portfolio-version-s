@@ -509,3 +509,185 @@ header .navlinks ul li a {
     font-size: 0.9vw;
     line-height: 1.5vw;
 }
+
+/* - - - - - portfolio styling - - - - - */
+#portfolio {
+    padding: 0 10%;
+}
+
+#portfolio .sample-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10% 0;
+}
+
+#portfolio .sample-product-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10% 0;
+}
+
+#portfolio .sample-product .img {
+    position: relative;
+    width: 45%;
+    border: 0.1vw solid #494949;
+    transform: rotate(10deg);
+}
+
+#portfolio .sample-product-1 .img {
+    position: relative;
+    width: 45%;
+    border: 0.1vw solid #494949;
+    transform: rotate(10deg);
+}
+
+#portfolio .sample-product .img img {
+    width: 100%;
+    transition: 0.3s;
+    position: relative;
+    transform: rotate(-10deg);
+    border: 0.1vw solid #494949;
+}
+
+#portfolio .sample-product-1 .img img {
+    width: 100%;
+    transition: 0.3s;
+    position: relative;
+    transform: rotate(-10deg);
+    border: 0.1vw solid #494949;
+}
+
+#portfolio .sample-product .short-description {
+    width: 55%;
+    padding-left: 10%;
+}
+
+#portfolio .sample-product-1 .short-description {
+    width: 55%;
+    padding-right: 10%;
+}
+
+#portfolio .sample-product .short-description span {
+    display: flex;
+    align-items: center;
+    color: #009ff6;
+    font-size: 1.2vw;
+    margin-bottom: 2%;
+}
+
+#portfolio .sample-product-1 .short-description span {
+    display: flex;
+    align-items: center;
+    color: #009ff6;
+    font-size: 1.2vw;
+    margin-bottom: 2%;
+}
+
+#portfolio .sample-product .short-description span div {
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 2%;
+}
+
+#portfolio .sample-product-1 .short-description span div {
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 2%;
+}
+
+#portfolio .sample-product .short-description p {
+    color: #dcdddd;
+    font-size: 0.9vw;
+    line-height: 1.5vw;
+}
+
+#portfolio .sample-product-1 .short-description p {
+    color: #dcdddd;
+    font-size: 0.9vw;
+    line-height: 1.5vw;
+}
+
+#portfolio .sample-product .short-description h3 {
+    color: #dcdddd;
+    margin-top: 2%;
+    font-size: 0.9vw;
+    line-height: 1.5vw;
+}
+
+#portfolio .sample-product-1 .short-description h3 {
+    color: #dcdddd;
+    margin-top: 2%;
+    font-size: 0.9vw;
+    line-height: 1.5vw;
+}
+
+#portfolio .sample-product .short-description .tech-used {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+#portfolio .sample-product-1 .short-description .tech-used {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+#portfolio .sample-product .short-description .tech-used ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+#portfolio .sample-product-1 .short-description .tech-used ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+#portfolio .sample-product .short-description .tech-used ul li {
+    color: #009ff6;
+    margin-right: 10%;
+    font-size: 0.9vw;
+}
+
+#portfolio .sample-product-1 .short-description .tech-used ul li {
+    color: #009ff6;
+    margin-right: 10%;
+    font-size: 0.9vw;
+}
+
+#portfolio .sample-product .short-description .tech-used a {
+    /* margin-right: 10%; */
+    background-color: #009ff6;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8vw;
+    border-radius: 0.2vw;
+    outline: none;
+    border: none;
+    padding: 2.5% 6%;
+}
+
+#portfolio .sample-product-1 .short-description .tech-used a {
+    /* margin-right: 10%; */
+    background-color: #009ff6;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8vw;
+    border-radius: 0.2vw;
+    outline: none;
+    border: none;
+    padding: 2.5% 6%;
+}
