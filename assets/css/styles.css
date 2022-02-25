@@ -752,12 +752,15 @@ header .navlinks ul li a {
 }
 
 #contact .social a {
-    margin: 0 10%;
+    margin: 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #contact .social a svg {
-    width: 1.7vw;
-    height: 1.7vw;
+    width: 1.3vw;
+    height: 1.3vw;
     color: #009ff6;
 }
 
