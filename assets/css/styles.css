@@ -388,7 +388,7 @@ header .navlinks ul li a {
 #about {
     padding: 0 5%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
 }
 
@@ -419,4 +419,75 @@ header .navlinks ul li a {
     color: #dcdddd;
     line-height: 1.6vw;
     font-size: 0.9vw;
+}
+
+#about .experience {
+    width: 50%;
+}
+
+#about .experience h3 {
+    font-family: "Montserrat";
+    color: #009ff6;
+    margin-bottom: 2%;
+    font-size: 1vw;
+}
+
+#about .experience .tabs {
+    padding-left: 5%;
+}
+
+#about .experience .tabs ul {
+    width: 20%;
+    list-style-type: none;
+}
+
+#about .experience .tabs ul li {
+    cursor: pointer;
+    padding: 5%;
+    /* background-color: transparent; */
+    position: relative;
+    z-index: 5;
+}
+
+#about .experience .tabs ul li .link {
+    position: relative;
+    border-radius: 1.5vw 0 0 1.5vw;
+    padding: 10%;
+    color: #dcdddd;
+    background-color: #1b1d22;
+    z-index: 4;
+}
+
+#about .experience .tabs ul li .link:hover {
+    background-color: transparent;
+    backdrop-filter: blur(0.5vw);
+}
+
+#about .experience .tabs ul li .light {
+    width: 1vw;
+    height: 1vw;
+    background-color: #009ff6;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 0;
+}
+
+#about .experience .tabs ul li .active-link {
+    background-color: transparent;
+    backdrop-filter: blur(0.5vw);
+}
+
+.Crescent360,
+.Icreations,
+.IamBand,
+.Freelance {
+    display: none;
+}
+
+.active-description {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
 }
