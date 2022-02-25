@@ -10,21 +10,50 @@
     font-family: "Cantarell";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/cantarell-v13-latin-regular.woff2") format("woff2"),
-        url("../fonts/cantarell-v13-latin-regular.woff") format("woff");
+    src: url("../fonts/cantarell/cantarell-v13-latin-regular.woff2")
+            format("woff2"),
+        url("../fonts/cantarell/cantarell-v13-latin-regular.woff")
+            format("woff");
 }
 
 @font-face {
     font-family: "Cantarell";
     font-style: bold;
     font-weight: 700;
-    src: url("../fonts/cantarell-v13-latin-700.woff2") format("woff2"),
-        url("../fonts/cantarell-v13-latin-700.woff") format("woff");
+    src: url("../fonts/cantarell/cantarell-v13-latin-700.woff2") format("woff2"),
+        url("../fonts/cantarell/cantarell-v13-latin-700.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Montserrat/Montserrat.woff2") format("woff2"),
+        url("../fonts/Montserrat/Montserrat.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    font-style: bold;
+    font-weight: 700;
+    src: url("../fonts/Montserrat--Bold/Montserrat--Bold.woff2") format("woff2"),
+        url("../fonts/Montserrat--Bold/Montserrat--Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    font-style: bolder;
+    font-weight: 900;
+    src: url("../fonts/Montserrat-Bold/Montserrat-Bold.woff2") format("woff2"),
+        url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff");
 }
 
 body {
-    background-color: #191a1f;
     font-family: "Cantarell";
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 main {
@@ -39,12 +68,14 @@ main {
     height: auto;
 }
 header {
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 header .logo h1 a {
+    font-family: "Montserrat";
     color: #009ff6;
     font-size: 3.5vw;
     text-decoration: none;
@@ -62,11 +93,234 @@ header .navlinks ul {
 }
 
 header .navlinks ul li {
-    color: #fff;
+    color: #707070;
     margin: 0 10%;
 }
 
 header .navlinks ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #707070;
+}
+
+.navlinks ul li a:hover,
+.navlinks ul li a:active,
+.navlinks ul li a:focus {
+    color: #009ff6;
+}
+
+/* - - - hero content styling - - - */
+.hero-content {
+    padding: 5%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content .text {
+    width: 50%;
+}
+
+.hero-content .text h2 {
+    font-family: "Montserrat";
+    letter-spacing: 0.1vw;
+    color: #707070;
+    font-size: 1.5vw;
+}
+.hero-content .text h3 {
+    font-family: "Montserrat";
+    font-weight: 900;
+    color: #707070;
+    line-height: 4vw;
+    font-size: 4vw;
+}
+
+.hero-content .image {
+    width: 35vw;
+    height: 35vw;
+    position: relative;
+}
+
+.hero-content .image .circle {
+    width: 40vw;
+    height: 40vw;
+    color: #009ff6;
+    position: absolute;
+    top: 10%;
+}
+
+.hero-content .image img {
+    width: 35vw;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    z-index: 2;
+}
+
+/* styling technologies*/
+@keyframes react {
+    0% {
+        top: 20%;
+        left: 12%;
+    }
+    50% {
+        top: 18%;
+        left: 0%;
+    }
+    100% {
+        top: 20%;
+        left: 12%;
+    }
+}
+
+@keyframes angular {
+    0% {
+        top: 20%;
+        left: 12%;
+    }
+    50% {
+        top: 8%;
+        left: 0%;
+    }
+    100% {
+        top: 20%;
+        left: 12%;
+    }
+}
+
+@keyframes node {
+    0% {
+        top: 20%;
+        left: 12%;
+    }
+    50% {
+        top: 5%;
+        left: 10%;
+    }
+    100% {
+        top: 20%;
+        left: 12%;
+    }
+}
+
+@keyframes flask {
+    0% {
+        top: 18%;
+        right: 2%;
+    }
+    50% {
+        top: 10%;
+        right: -5%;
+    }
+    100% {
+        top: 18%;
+        right: 2%;
+    }
+}
+
+@keyframes django {
+    0% {
+        top: 18%;
+        right: 2%;
+    }
+    50% {
+        top: 20%;
+        right: -10%;
+    }
+    100% {
+        top: 18%;
+        right: 2%;
+    }
+}
+
+.hero-content .image .tech {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    background-color: #121317;
+    /* background-color: rgba(255, 255, 255, 0); */
+    /* backdrop-filter: blur(0.5vw); */
+}
+
+.hero-content .image .tech svg {
+    position: relative;
+    width: 2vw;
+    height: 2vw;
+    color: #009ff6;
+}
+
+.html5 {
+    top: 75%;
+    left: -3%;
+    /* color: #e34f26; */
+}
+
+.css {
+    top: 45%;
+    left: -2%;
+    /* color: #264de4; */
+}
+
+.javascript {
+    width: 2vw;
+    height: 2vw;
+    top: 20%;
+    left: 12%;
+    z-index: 5;
+    /* color: #f7df1e; */
+}
+
+.react {
+    top: 20%;
+    left: 12%;
+    animation: react 2s infinite;
+    background-color: transparent !important;
+}
+
+.angular {
+    top: 20%;
+    left: 12%;
+    animation: angular 2s infinite;
+    background-color: transparent !important;
+}
+
+.node {
+    top: 20%;
+    left: 12%;
+    animation: node 2s infinite;
+    background-color: transparent !important;
+}
+
+.python {
+    top: 18%;
+    right: 2%;
+    z-index: 3;
+}
+
+.flask {
+    top: 18%;
+    right: 2%;
+    animation: flask 2s 1s infinite;
+    background-color: transparent !important;
+}
+
+.django {
+    top: 18%;
+    right: 2%;
+    animation: django 2s 1s infinite;
+    background-color: transparent !important;
+}
+
+.mongo {
+    top: 45%;
+    right: -15%;
+}
+
+.mysql {
+    top: 75%;
+    right: -15%;
 }
