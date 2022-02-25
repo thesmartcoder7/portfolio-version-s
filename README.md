@@ -3,6 +3,7 @@
 By: Samuel Martins
 
 ![Project Image](assets/images/readme.png)
+[Live Site](https://thesmartcoder7.github.io/portfolio-version-s/)
 
 ## Description
 
