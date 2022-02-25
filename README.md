@@ -12,6 +12,7 @@ This is a basic landing page for a portfolio. The goal of this project was to co
 
 -   HTML5
 -   CSS3
+-   JS
 
 ## Usage
 
