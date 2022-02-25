@@ -146,6 +146,10 @@ header .navlinks ul li a {
     padding-bottom: 5%;
 }
 
+.hero-content .text ul li {
+    font-size: 0.8vw;
+}
+
 .hero-content .text a {
     text-decoration: none;
     color: #009ff6;
@@ -364,7 +368,7 @@ header .navlinks ul li a {
 
 /* - - - - - about me styling - - - - - */
 .title {
-    margin-top: 15%;
+    margin-top: 10%;
     padding: 5%;
     display: flex;
     align-items: center;
@@ -391,16 +395,6 @@ header .navlinks ul li a {
     align-items: flex-start;
     position: relative;
 }
-
-/* #about .circle {
-    position: absolute;
-    background-color: #009ff6;
-    border-radius: 50%;
-    top: -20%;
-    left: 30%;
-    width: 7vw;
-    height: 7vw;
-} */
 
 #about .why {
     width: 50%;
@@ -433,6 +427,7 @@ header .navlinks ul li a {
 }
 
 #about .experience .tabs {
+    width: 100%;
     padding-left: 5%;
     display: flex;
 }
@@ -452,7 +447,7 @@ header .navlinks ul li a {
 
 #about .experience .tabs ul li .link {
     position: relative;
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     border-radius: 1.5vw 0 0 1.5vw;
     padding: 10%;
     color: #dcdddd;
@@ -461,6 +456,7 @@ header .navlinks ul li a {
 }
 
 #about .experience .tabs ul li .link:hover {
+    transition: 0.2s ease-in-out;
     background-color: transparent;
     backdrop-filter: blur(0.5vw);
 }
@@ -487,19 +483,29 @@ header .navlinks ul li a {
     display: none;
 }
 
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .active-description {
-    width: 60%;
+    width: 70%;
+    height: 5vw;
+    animation: appear 1s;
     padding-left: 5%;
     display: flex;
     flex-direction: column;
 }
 
 #about .experience .active-description h3 {
-    font-size: 0.9vw;
+    font-size: 1vw;
 }
 
 #about .experience .active-description p {
     color: #dcdddd;
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     line-height: 1.5vw;
 }
