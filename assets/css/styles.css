@@ -3,27 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* - - - - - font declaration - - - - - */
-@font-face {
-    font-family: "Cantarell";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/cantarell/cantarell-v13-latin-regular.woff2")
-            format("woff2"),
-        url("../fonts/cantarell/cantarell-v13-latin-regular.woff")
-            format("woff");
-}
-
-@font-face {
-    font-family: "Cantarell";
-    font-style: bold;
-    font-weight: 700;
-    src: url("../fonts/cantarell/cantarell-v13-latin-700.woff2") format("woff2"),
-        url("../fonts/cantarell/cantarell-v13-latin-700.woff") format("woff");
-}
-
 @font-face {
     font-family: "Monsterrat";
     font-style: normal;
@@ -49,7 +32,7 @@
 }
 
 body {
-    font-family: "Cantarell";
+    font-family: "Monserrat";
     background-image: url("../images/background1.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -157,6 +140,12 @@ header .navlinks ul li a {
     font-size: 0.9vw;
 }
 
+.hero-content .text ul {
+    padding-left: 5%;
+    color: #dcdddd;
+    padding-bottom: 5%;
+}
+
 .hero-content .text a {
     text-decoration: none;
     color: #009ff6;
@@ -168,6 +157,10 @@ header .navlinks ul li a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.hero-content .text a {
+    font-size: 0.9vw;
 }
 
 .hero-content .text .cta a {
@@ -390,4 +383,40 @@ header .navlinks ul li a {
     color: #dcdddd;
     margin-left: 1%;
     font-size: 1vw;
+}
+
+#about {
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* #about .circle {
+    position: absolute;
+    background-color: #009ff6;
+    border-radius: 50%;
+    top: -20%;
+    left: 30%;
+    width: 7vw;
+    height: 7vw;
+} */
+
+#about .why {
+    width: 50%;
+    padding-right: 10%;
+}
+
+#about .why h3 {
+    font-family: "Montserrat";
+    color: #009ff6;
+    margin-bottom: 2%;
+    font-size: 1vw;
+}
+
+#about .why p {
+    font-family: "Montserrat";
+    color: #dcdddd;
+    line-height: 1.6vw;
+    font-size: 0.9vw;
 }
