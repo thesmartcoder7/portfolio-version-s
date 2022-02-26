@@ -1,3 +1,6 @@
+/* - - - - - font import - - - - - */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
 /* - - - - - browser resets - - - - - */
 * {
     margin: 0;
@@ -5,29 +8,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-/* - - - - - font declaration - - - - - */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
-/* @font-face {
-    font-family: "Monsterrat";
-    src: url("../fonts/Montserrat-Regular.ttf");
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "Monsterrat";
-    src: url("../fonts/Montserrat-SemiBold.ttf");
-    font-style: bold;
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Monsterrat";
-    src: url("../fonts/Montserrat-ExtraBold.ttf");
-    font-style: bolder;
-    font-weight: 900;
-} */
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -81,7 +61,7 @@ header .navlinks ul li {
 header .navlinks ul li a {
     text-decoration: none;
     color: #dcdddd;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 .navlinks ul li a:hover,
@@ -122,7 +102,7 @@ header .navlinks ul li a {
 .hero-content .text span {
     color: #dcdddd;
     margin-left: 2%;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 .hero-content .text h2 {
@@ -137,7 +117,7 @@ header .navlinks ul li a {
     font-family: "Montserrat", sans-serif;
     color: #dcdddd;
     line-height: 1.8vw;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 .hero-content .text ul {
@@ -148,7 +128,7 @@ header .navlinks ul li a {
 
 .hero-content .text ul li {
     line-height: 1.5;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 .hero-content .text a {
@@ -165,7 +145,7 @@ header .navlinks ul li a {
 }
 
 .hero-content .text a {
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 .hero-content .text .cta a {
@@ -387,7 +367,7 @@ header .navlinks ul li a {
 .title span {
     color: #dcdddd;
     margin-left: 1%;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 #about {
@@ -413,7 +393,7 @@ header .navlinks ul li a {
     font-family: "Montserrat", sans-serif;
     color: #dcdddd;
     line-height: 1.8vw;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 #about .experience {
@@ -448,7 +428,7 @@ header .navlinks ul li a {
 
 #about .experience .tabs ul li .link {
     position: relative;
-    font-size: 1vw;
+    font-size: 0.9vw;
     border-radius: 1.5vw 0 0 1.5vw;
     padding: 10%;
     color: #dcdddd;
@@ -507,7 +487,7 @@ header .navlinks ul li a {
 
 #about .experience .active-description p {
     color: #dcdddd;
-    font-size: 1vw;
+    font-size: 0.9vw;
     line-height: 1.8vw;
 }
 
@@ -611,27 +591,27 @@ header .navlinks ul li a {
 
 #portfolio .sample-product .short-description p {
     color: #dcdddd;
-    font-size: 1vw;
+    font-size: 0.9vw;
     line-height: 1.8vw;
 }
 
 #portfolio .sample-product-1 .short-description p {
     color: #dcdddd;
-    font-size: 1vw;
+    font-size: 0.9vw;
     line-height: 1.8vw;
 }
 
 #portfolio .sample-product .short-description h3 {
     color: #dcdddd;
     margin-top: 2%;
-    font-size: 1vw;
+    font-size: 0.9vw;
     line-height: 1.5vw;
 }
 
 #portfolio .sample-product-1 .short-description h3 {
     color: #dcdddd;
     margin-top: 2%;
-    font-size: 1vw;
+    font-size: 0.9vw;
     line-height: 1.5vw;
 }
 
@@ -666,13 +646,13 @@ header .navlinks ul li a {
 #portfolio .sample-product .short-description .tech-used ul li {
     color: #009ff6;
     margin-right: 10%;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 #portfolio .sample-product-1 .short-description .tech-used ul li {
     color: #009ff6;
     margin-right: 10%;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 #portfolio .sample-product .short-description .tech-used a {
@@ -726,7 +706,7 @@ header .navlinks ul li a {
 #contact .inner p {
     padding: 3% 0;
     color: #dcdddd;
-    font-size: 1vw;
+    font-size: 0.9vw;
     line-height: 1.8vw;
     margin-bottom: 5%;
 }
