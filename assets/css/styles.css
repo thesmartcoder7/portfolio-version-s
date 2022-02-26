@@ -7,7 +7,8 @@
 }
 
 /* - - - - - font declaration - - - - - */
-@font-face {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+/* @font-face {
     font-family: "Monsterrat";
     src: url("../fonts/Montserrat-Regular.ttf");
     font-style: normal;
@@ -26,7 +27,7 @@
     src: url("../fonts/Montserrat-ExtraBold.ttf");
     font-style: bolder;
     font-weight: 900;
-}
+} */
 
 body {
     font-family: "Montserrat", sans-serif;
