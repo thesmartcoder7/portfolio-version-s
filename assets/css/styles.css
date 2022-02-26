@@ -11,29 +11,26 @@
     font-family: "Monsterrat";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/Montserrat/Montserrat.woff2") format("woff2"),
-        url("../fonts/Montserrat/Montserrat.woff") format("woff");
+    src: url("../fonts/Montserrat/Montserrat.woff") format("woff");
 }
 
 @font-face {
     font-family: "Monsterrat";
     font-style: bold;
     font-weight: 700;
-    src: url("../fonts/Montserrat--Bold/Montserrat--Bold.woff2") format("woff2"),
-        url("../fonts/Montserrat--Bold/Montserrat--Bold.woff") format("woff");
+    src: url("../fonts/Montserrat--Bold/Montserrat--Bold.woff") format("woff");
 }
 
 @font-face {
     font-family: "Monsterrat";
     font-style: bolder;
     font-weight: 900;
-    src: url("../fonts/Montserrat-Bold/Montserrat-Bold.woff2") format("woff2"),
-        url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff");
+    src: url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff");
 }
 
 body {
     font-family: "Monserrat";
-    background-image: url("../images/background1.png");
+    background-image: url("../images/background1.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
