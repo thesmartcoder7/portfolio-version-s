@@ -35,11 +35,57 @@ header {
     justify-content: space-between;
 }
 
+@media screen and (max-width: 500px) {
+    header {
+        padding: 5% 0 0 0;
+        flex-direction: row-reverse;
+    }
+}
+
+header label,
+header input {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    header label {
+        display: flex;
+        color: #009ff6;
+        width: 10vw;
+        height: 10vw;
+    }
+
+    header input {
+        display: none;
+    }
+
+    #check:checked ~ label {
+        color: #009ff6;
+        z-index: 11;
+        position: fixed;
+        top: 4.5%;
+        right: 10;
+    }
+
+    #check:checked ~ .logo {
+        z-index: 11;
+        position: fixed;
+        top: 4%;
+        left: 10%;
+    }
+}
+
 header .logo h1 a {
     font-family: "Montserrat", sans-serif;
     color: #009ff6;
     font-size: 3.5vw;
     text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    header .logo h1 a {
+        font-size: 10vw;
+    }
 }
 
 header .logo h1 .m {
@@ -70,6 +116,47 @@ header .navlinks ul li a {
     color: #009ff6;
 }
 
+@media screen and (max-width: 500px) {
+    header .navlinks {
+        transition: 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: #1b1d22;
+        z-index: 10;
+        top: 0;
+        left: 100%;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #check:checked ~ .navlinks {
+        transition: 0.3s ease;
+        left: 0;
+        top: 0;
+    }
+
+    header .navlinks ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    header .navlinks ul li {
+        color: #707070;
+        margin: 50% 0%;
+    }
+
+    header .navlinks ul li a {
+        text-decoration: none;
+        color: #dcdddd;
+        font-size: 5vw;
+    }
+}
+
 /* - - - hero content styling - - - */
 .hero-content {
     padding: 5%;
@@ -79,9 +166,27 @@ header .navlinks ul li a {
     justify-content: space-between;
 }
 
+@media screen and (max-width: 500px) {
+    .hero-content {
+        padding: 5%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
 .hero-content .text {
     width: 40%;
     padding-top: 5%;
+}
+
+@media screen and (max-width: 500px) {
+    .hero-content .text {
+        width: 100%;
+        margin-top: 50%;
+    }
 }
 
 .hero-content .text .intro {
@@ -99,10 +204,28 @@ header .navlinks ul li a {
     background-color: #009ff6;
 }
 
+@media screen and (max-width: 500px) {
+    .hero-content .text .intro hr {
+        display: inline-block;
+        width: 10vw;
+        outline: none;
+        border: none;
+        height: 0.7vw;
+        background-color: #009ff6;
+    }
+}
 .hero-content .text span {
     color: #dcdddd;
     margin-left: 2%;
     font-size: 0.9vw;
+}
+
+@media screen and (max-width: 500px) {
+    .hero-content .text span {
+        color: #dcdddd;
+        margin-left: 5%;
+        font-size: 5vw;
+    }
 }
 
 .hero-content .text h2 {
@@ -113,11 +236,32 @@ header .navlinks ul li a {
     padding-top: 5%;
     padding-bottom: 2%;
 }
+
+@media screen and (max-width: 500px) {
+    .hero-content .text h2 {
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 0.1vw;
+        color: #dcdddd;
+        font-size: 4vw;
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+}
+
 .hero-content .text p {
     font-family: "Montserrat", sans-serif;
     color: #dcdddd;
     line-height: 1.8vw;
     font-size: 0.9vw;
+}
+
+@media screen and (max-width: 500px) {
+    .hero-content .text p {
+        font-family: "Montserrat", sans-serif;
+        color: #dcdddd;
+        line-height: 5vw;
+        font-size: 3vw;
+    }
 }
 
 .hero-content .text ul {
@@ -131,9 +275,22 @@ header .navlinks ul li a {
     font-size: 0.9vw;
 }
 
+@media screen and (max-width: 500px) {
+    .hero-content .text ul li {
+        line-height: 1.5;
+        font-size: 3vw;
+    }
+}
+
 .hero-content .text a {
     text-decoration: none;
     color: #009ff6;
+}
+@media screen and (max-width: 500px) {
+    .hero-content .text a {
+        text-decoration: none;
+        color: #009ff6;
+    }
 }
 
 .hero-content .text .cta {
@@ -144,8 +301,23 @@ header .navlinks ul li a {
     justify-content: flex-start;
 }
 
+@media screen and (max-width: 500px) {
+    .hero-content .text .cta {
+        width: 100%;
+        margin-top: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
 .hero-content .text a {
     font-size: 0.9vw;
+}
+@media screen and (max-width: 500px) {
+    .hero-content .text a {
+        font-size: 3vw;
+    }
 }
 
 .hero-content .text .cta a {
@@ -158,11 +330,31 @@ header .navlinks ul li a {
     border: none;
     padding: 3% 6%;
 }
+@media screen and (max-width: 500px) {
+    .hero-content .text .cta a {
+        margin-right: 10%;
+        background-color: #009ff6;
+        color: #fff;
+        font-size: 3vw;
+        border-radius: 0.2vw;
+        outline: none;
+        border: none;
+        padding: 3% 6%;
+    }
+}
 
 .hero-content .image {
     width: 35vw;
     height: 35vw;
     position: relative;
+}
+
+@media screen and (max-width: 500px) {
+    .hero-content .image {
+        transform: scale(1.8);
+        margin-top: 15%;
+        margin-right: 10%;
+    }
 }
 
 .hero-content .image .circle {
@@ -355,6 +547,7 @@ header .navlinks ul li a {
     align-items: center;
     justify-content: flex-start;
 }
+
 .title hr {
     display: inline-block;
     width: 2vw;
@@ -364,10 +557,28 @@ header .navlinks ul li a {
     background-color: #009ff6;
 }
 
+@media screen and (max-width: 500px) {
+    .title hr {
+        display: inline-block;
+        width: 10vw;
+        outline: none;
+        border: none;
+        height: 0.7vw;
+        background-color: #009ff6;
+    }
+}
+
 .title span {
     color: #dcdddd;
     margin-left: 1%;
     font-size: 0.9vw;
+}
+@media screen and (max-width: 500px) {
+    .title span {
+        color: #dcdddd;
+        margin-left: 5%;
+        font-size: 5vw;
+    }
 }
 
 #about {
@@ -376,10 +587,26 @@ header .navlinks ul li a {
     align-items: flex-start;
     position: relative;
 }
+@media screen and (max-width: 500px) {
+    #about {
+        padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+}
 
 #about .why {
     width: 50%;
     padding-right: 10%;
+}
+@media screen and (max-width: 500px) {
+    #about .why {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 15%;
+    }
 }
 
 #about .why h3 {
@@ -388,6 +615,14 @@ header .navlinks ul li a {
     margin-bottom: 2%;
     font-size: 1.5vw;
 }
+@media screen and (max-width: 500px) {
+    #about .why h3 {
+        font-family: "Montserrat", sans-serif;
+        color: #009ff6;
+        margin-bottom: 5%;
+        font-size: 5vw;
+    }
+}
 
 #about .why p {
     font-family: "Montserrat", sans-serif;
@@ -395,9 +630,22 @@ header .navlinks ul li a {
     line-height: 1.8vw;
     font-size: 0.9vw;
 }
+@media screen and (max-width: 500px) {
+    #about .why p {
+        font-family: "Montserrat", sans-serif;
+        color: #dcdddd;
+        line-height: 5vw;
+        font-size: 3vw;
+    }
+}
 
 #about .experience {
     width: 50%;
+}
+@media screen and (max-width: 500px) {
+    #about .experience {
+        width: 100%;
+    }
 }
 
 #about .experience h3 {
@@ -406,16 +654,41 @@ header .navlinks ul li a {
     margin-bottom: 2%;
     font-size: 1.5vw;
 }
+@media screen and (max-width: 500px) {
+    #about .experience h3 {
+        font-family: "Montserrat", sans-serif;
+        color: #009ff6;
+        margin-bottom: 5%;
+        font-size: 5vw;
+    }
+}
 
 #about .experience .tabs {
     width: 100%;
     padding-left: 5%;
     display: flex;
 }
+@media screen and (max-width: 500px) {
+    #about .experience .tabs {
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 #about .experience .tabs ul {
     width: 20%;
     list-style-type: none;
+}
+@media screen and (max-width: 500px) {
+    #about .experience .tabs ul {
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 #about .experience .tabs ul li {
@@ -434,6 +707,17 @@ header .navlinks ul li a {
     color: #dcdddd;
     background-color: #1b1d22;
     z-index: 4;
+}
+@media screen and (max-width: 500px) {
+    #about .experience .tabs ul li .link {
+        position: relative;
+        font-size: 3vw;
+        border-radius: 1.5vw 0 0 1.5vw;
+        padding: 10%;
+        color: #dcdddd;
+        background-color: #1b1d22;
+        z-index: 4;
+    }
 }
 
 #about .experience .tabs ul li .link:hover {
@@ -472,6 +756,7 @@ header .navlinks ul li a {
         opacity: 1;
     }
 }
+
 .active-description {
     width: 70%;
     height: 5vw;
@@ -480,15 +765,39 @@ header .navlinks ul li a {
     display: flex;
     flex-direction: column;
 }
+@media screen and (max-width: 500px) {
+    .active-description {
+        width: 100%;
+        height: auto;
+        animation: appear 1s;
+        padding-left: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 #about .experience .active-description h3 {
     font-size: 1.2vw;
+}
+@media screen and (max-width: 500px) {
+    #about .experience .active-description h3 {
+        margin-top: 7%;
+        font-size: 3.5vw;
+        font-weight: 400;
+    }
 }
 
 #about .experience .active-description p {
     color: #dcdddd;
     font-size: 0.9vw;
     line-height: 1.8vw;
+}
+@media screen and (max-width: 500px) {
+    #about .experience .active-description p {
+        color: #dcdddd;
+        font-size: 3vw;
+        line-height: 5vw;
+    }
 }
 
 #about .experience .active-description .d {
@@ -506,6 +815,15 @@ header .navlinks ul li a {
     align-items: flex-start;
     padding: 10% 0;
 }
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20% 0;
+    }
+}
 
 #portfolio .sample-product-1 {
     display: flex;
@@ -513,6 +831,15 @@ header .navlinks ul li a {
     justify-content: space-between;
     align-items: flex-start;
     padding: 10% 0;
+}
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20% 0;
+    }
 }
 
 #portfolio .sample-product .img {
@@ -522,6 +849,15 @@ header .navlinks ul li a {
     transform: rotate(10deg);
     backdrop-filter: blur(0.1vw);
 }
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product .img {
+        position: relative;
+        width: 100%;
+        border: 0.1vw solid #494949;
+        transform: rotate(10deg);
+        backdrop-filter: blur(0.1vw);
+    }
+}
 
 #portfolio .sample-product-1 .img {
     position: relative;
@@ -529,6 +865,15 @@ header .navlinks ul li a {
     border: 0.1vw solid #494949;
     transform: rotate(10deg);
     backdrop-filter: blur(0.1vw);
+}
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product-1 .img {
+        position: relative;
+        width: 100%;
+        border: 0.1vw solid #494949;
+        transform: rotate(10deg);
+        backdrop-filter: blur(0.1vw);
+    }
 }
 
 #portfolio .sample-product .img img {
@@ -551,10 +896,24 @@ header .navlinks ul li a {
     width: 55%;
     padding-left: 10%;
 }
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product .short-description {
+        margin-top: 20%;
+        width: 100%;
+        padding-left: 0;
+    }
+}
 
 #portfolio .sample-product-1 .short-description {
     width: 55%;
     padding-right: 10%;
+}
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product-1 .short-description {
+        margin-top: 20%;
+        width: 100%;
+        padding-right: 0;
+    }
 }
 
 #portfolio .sample-product .short-description span {
@@ -564,6 +923,15 @@ header .navlinks ul li a {
     font-size: 1.2vw;
     margin-bottom: 2%;
 }
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product .short-description span {
+        display: flex;
+        align-items: center;
+        color: #009ff6;
+        font-size: 3.5vw;
+        margin-bottom: 2%;
+    }
+}
 
 #portfolio .sample-product-1 .short-description span {
     display: flex;
@@ -571,6 +939,15 @@ header .navlinks ul li a {
     color: #009ff6;
     font-size: 1.2vw;
     margin-bottom: 2%;
+}
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product-1 .short-description span {
+        display: flex;
+        align-items: center;
+        color: #009ff6;
+        font-size: 3.5vw;
+        margin-bottom: 2%;
+    }
 }
 
 #portfolio .sample-product .short-description span div {
@@ -580,6 +957,15 @@ header .navlinks ul li a {
     background-color: #fff;
     margin-right: 2%;
 }
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product .short-description span div {
+        width: 1.5vw;
+        height: 1.5vw;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 2%;
+    }
+}
 
 #portfolio .sample-product-1 .short-description span div {
     width: 0.5vw;
@@ -588,17 +974,40 @@ header .navlinks ul li a {
     background-color: #fff;
     margin-right: 2%;
 }
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product-1 .short-description span div {
+        width: 1.5vw;
+        height: 1.5vw;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 2%;
+    }
+}
 
 #portfolio .sample-product .short-description p {
     color: #dcdddd;
     font-size: 0.9vw;
     line-height: 1.8vw;
 }
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product .short-description p {
+        color: #dcdddd;
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+}
 
 #portfolio .sample-product-1 .short-description p {
     color: #dcdddd;
     font-size: 0.9vw;
     line-height: 1.8vw;
+}
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product-1 .short-description p {
+        color: #dcdddd;
+        font-size: 3vw;
+        line-height: 5vw;
+    }
 }
 
 #portfolio .sample-product .short-description h3 {
@@ -607,12 +1016,28 @@ header .navlinks ul li a {
     font-size: 0.9vw;
     line-height: 1.5vw;
 }
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product .short-description h3 {
+        color: #dcdddd;
+        margin-top: 2%;
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+}
 
 #portfolio .sample-product-1 .short-description h3 {
     color: #dcdddd;
     margin-top: 2%;
     font-size: 0.9vw;
     line-height: 1.5vw;
+}
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product-1 .short-description h3 {
+        color: #dcdddd;
+        margin-top: 2%;
+        font-size: 3vw;
+        line-height: 5vw;
+    }
 }
 
 #portfolio .sample-product .short-description .tech-used {
@@ -648,11 +1073,25 @@ header .navlinks ul li a {
     margin-right: 10%;
     font-size: 0.9vw;
 }
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product .short-description .tech-used ul li {
+        color: #009ff6;
+        margin-right: 10%;
+        font-size: 2.8vw;
+    }
+}
 
 #portfolio .sample-product-1 .short-description .tech-used ul li {
     color: #009ff6;
     margin-right: 10%;
     font-size: 0.9vw;
+}
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product-1 .short-description .tech-used ul li {
+        color: #009ff6;
+        margin-right: 10%;
+        font-size: 2.8vw;
+    }
 }
 
 #portfolio .sample-product .short-description .tech-used a {
@@ -665,6 +1104,18 @@ header .navlinks ul li a {
     border: none;
     padding: 2.5% 6%;
 }
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product .short-description .tech-used a {
+        background-color: #009ff6;
+        text-decoration: none;
+        color: #fff;
+        font-size: 2.8vw;
+        border-radius: 1vw;
+        outline: none;
+        border: none;
+        padding: 2.5% 6%;
+    }
+}
 
 #portfolio .sample-product-1 .short-description .tech-used a {
     background-color: #009ff6;
@@ -675,6 +1126,18 @@ header .navlinks ul li a {
     outline: none;
     border: none;
     padding: 2.5% 6%;
+}
+@media screen and (max-width: 500px) {
+    #portfolio .sample-product-1 .short-description .tech-used a {
+        background-color: #009ff6;
+        text-decoration: none;
+        color: #fff;
+        font-size: 2.8vw;
+        border-radius: 1vw;
+        outline: none;
+        border: none;
+        padding: 2.5% 6%;
+    }
 }
 
 /* - - - - - contact styling - - - - - */
@@ -697,10 +1160,28 @@ header .navlinks ul li a {
     position: relative;
     z-index: 3;
 }
+@media screen and (max-width: 500px) {
+    #contact .inner {
+        text-align: center;
+        padding: 10%;
+        width: 100%;
+        height: auto;
+        border: #494949 solid 0.1vw;
+        backdrop-filter: blur(0.2vw);
+        position: relative;
+        z-index: 3;
+    }
+}
 
 #contact .inner h3 {
     font-size: 1.5vw;
     color: #009ff6;
+}
+@media screen and (max-width: 500px) {
+    #contact .inner h3 {
+        font-size: 3.5vw;
+        color: #009ff6;
+    }
 }
 
 #contact .inner p {
@@ -709,6 +1190,15 @@ header .navlinks ul li a {
     font-size: 0.9vw;
     line-height: 1.8vw;
     margin-bottom: 5%;
+}
+@media screen and (max-width: 500px) {
+    #contact .inner p {
+        padding: 5% 0;
+        color: #dcdddd;
+        font-size: 3vw;
+        line-height: 5vw;
+        margin-bottom: 5%;
+    }
 }
 
 #contact .inner a {
@@ -721,11 +1211,30 @@ header .navlinks ul li a {
     border: none;
     padding: 2.5% 6%;
 }
+@media screen and (max-width: 500px) {
+    #contact .inner a {
+        background-color: #009ff6;
+        text-decoration: none;
+        color: #fff;
+        font-size: 2.8vw;
+        border-radius: 1vw;
+        outline: none;
+        border: none;
+        padding: 5% 8%;
+    }
+}
 
 #contact .inner a svg {
     width: 1vw;
     height: 1vw;
     margin: 0 1%;
+}
+@media screen and (max-width: 500px) {
+    #contact .inner a svg {
+        width: 2vw;
+        height: 2vw;
+        margin: 0 1%;
+    }
 }
 
 #contact .social {
@@ -748,10 +1257,26 @@ header .navlinks ul li a {
     height: 1.5vw;
     color: #009ff6;
 }
+@media screen and (max-width: 500px) {
+    #contact .social a svg {
+        width: 5vw;
+        height: 5vw;
+        color: #009ff6;
+    }
+}
 
 #contact p {
     padding-top: 2%;
     color: #dcdddd;
     font-size: 0.8vw;
     line-height: 1.8vw;
+}
+@media screen and (max-width: 500px) {
+    #contact p {
+        padding-top: 2%;
+        color: #dcdddd;
+        font-size: 2.8vw;
+        line-height: 5.6vw;
+        padding-bottom: 5%;
+    }
 }
