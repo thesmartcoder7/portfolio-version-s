@@ -6,9 +6,6 @@
     scroll-behavior: smooth;
 }
 
-/* - - - - - font import - - - - - */
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"); */
-
 /* - - - - - font declaration - - - - - */
 @font-face {
     font-family: "Monsterrat";
@@ -83,7 +80,7 @@ header .navlinks ul li {
 header .navlinks ul li a {
     text-decoration: none;
     color: #dcdddd;
-    font-size: 0.9vw;
+    font-size: 1vw;
 }
 
 .navlinks ul li a:hover,
@@ -103,6 +100,7 @@ header .navlinks ul li a {
 
 .hero-content .text {
     width: 40%;
+    padding-top: 5%;
 }
 
 .hero-content .text .intro {
@@ -131,13 +129,14 @@ header .navlinks ul li a {
     letter-spacing: 0.1vw;
     color: #dcdddd;
     font-size: 2vw;
-    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 2%;
 }
 .hero-content .text p {
     font-family: "Montserrat", sans-serif;
     color: #dcdddd;
-    line-height: 1.6vw;
-    font-size: 0.9vw;
+    line-height: 1.8vw;
+    font-size: 1vw;
 }
 
 .hero-content .text ul {
@@ -147,7 +146,8 @@ header .navlinks ul li a {
 }
 
 .hero-content .text ul li {
-    font-size: 0.8vw;
+    line-height: 1.5;
+    font-size: 1vw;
 }
 
 .hero-content .text a {
@@ -164,14 +164,14 @@ header .navlinks ul li a {
 }
 
 .hero-content .text a {
-    font-size: 0.9vw;
+    font-size: 1vw;
 }
 
 .hero-content .text .cta a {
     margin-right: 10%;
     background-color: #009ff6;
     color: #fff;
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     border-radius: 0.2vw;
     outline: none;
     border: none;
@@ -405,14 +405,14 @@ header .navlinks ul li a {
     font-family: "Montserrat", sans-serif;
     color: #009ff6;
     margin-bottom: 2%;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 #about .why p {
     font-family: "Montserrat", sans-serif;
     color: #dcdddd;
-    line-height: 1.6vw;
-    font-size: 0.9vw;
+    line-height: 1.8vw;
+    font-size: 1vw;
 }
 
 #about .experience {
@@ -423,7 +423,7 @@ header .navlinks ul li a {
     font-family: "Montserrat", sans-serif;
     color: #009ff6;
     margin-bottom: 2%;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 #about .experience .tabs {
@@ -447,7 +447,7 @@ header .navlinks ul li a {
 
 #about .experience .tabs ul li .link {
     position: relative;
-    font-size: 0.9vw;
+    font-size: 1vw;
     border-radius: 1.5vw 0 0 1.5vw;
     padding: 10%;
     color: #dcdddd;
@@ -501,13 +501,17 @@ header .navlinks ul li a {
 }
 
 #about .experience .active-description h3 {
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 #about .experience .active-description p {
     color: #dcdddd;
-    font-size: 0.9vw;
-    line-height: 1.5vw;
+    font-size: 1vw;
+    line-height: 1.8vw;
+}
+
+#about .experience .active-description .d {
+    padding-top: 5%;
 }
 
 /* - - - - - portfolio styling - - - - - */
@@ -606,27 +610,27 @@ header .navlinks ul li a {
 
 #portfolio .sample-product .short-description p {
     color: #dcdddd;
-    font-size: 0.9vw;
-    line-height: 1.5vw;
+    font-size: 1vw;
+    line-height: 1.8vw;
 }
 
 #portfolio .sample-product-1 .short-description p {
     color: #dcdddd;
-    font-size: 0.9vw;
-    line-height: 1.5vw;
+    font-size: 1vw;
+    line-height: 1.8vw;
 }
 
 #portfolio .sample-product .short-description h3 {
     color: #dcdddd;
     margin-top: 2%;
-    font-size: 0.9vw;
+    font-size: 1vw;
     line-height: 1.5vw;
 }
 
 #portfolio .sample-product-1 .short-description h3 {
     color: #dcdddd;
     margin-top: 2%;
-    font-size: 0.9vw;
+    font-size: 1vw;
     line-height: 1.5vw;
 }
 
@@ -661,13 +665,13 @@ header .navlinks ul li a {
 #portfolio .sample-product .short-description .tech-used ul li {
     color: #009ff6;
     margin-right: 10%;
-    font-size: 0.9vw;
+    font-size: 1vw;
 }
 
 #portfolio .sample-product-1 .short-description .tech-used ul li {
     color: #009ff6;
     margin-right: 10%;
-    font-size: 0.9vw;
+    font-size: 1vw;
 }
 
 #portfolio .sample-product .short-description .tech-used a {
@@ -721,8 +725,8 @@ header .navlinks ul li a {
 #contact .inner p {
     padding: 3% 0;
     color: #dcdddd;
-    font-size: 0.9vw;
-    line-height: 1.5vw;
+    font-size: 1vw;
+    line-height: 1.8vw;
     margin-bottom: 5%;
 }
 
@@ -759,8 +763,8 @@ header .navlinks ul li a {
 }
 
 #contact .social a svg {
-    width: 1.3vw;
-    height: 1.3vw;
+    width: 1.5vw;
+    height: 1.5vw;
     color: #009ff6;
 }
 
@@ -768,5 +772,5 @@ header .navlinks ul li a {
     padding-top: 2%;
     color: #dcdddd;
     font-size: 0.8vw;
-    line-height: 1.5vw;
+    line-height: 1.8vw;
 }
