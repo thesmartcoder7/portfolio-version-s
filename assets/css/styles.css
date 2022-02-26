@@ -32,7 +32,7 @@
 } */
 
 body {
-    font-family: "Monserrat";
+    font-family: "Montserrat", sans-serif;
     background-image: url("../images/background1.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -58,7 +58,7 @@ header {
 }
 
 header .logo h1 a {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: #009ff6;
     font-size: 3.5vw;
     text-decoration: none;
@@ -127,14 +127,14 @@ header .navlinks ul li a {
 }
 
 .hero-content .text h2 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     letter-spacing: 0.1vw;
     color: #dcdddd;
     font-size: 2vw;
     padding-bottom: 5%;
 }
 .hero-content .text p {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: #dcdddd;
     line-height: 1.6vw;
     font-size: 0.9vw;
@@ -402,14 +402,14 @@ header .navlinks ul li a {
 }
 
 #about .why h3 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: #009ff6;
     margin-bottom: 2%;
     font-size: 1vw;
 }
 
 #about .why p {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: #dcdddd;
     line-height: 1.6vw;
     font-size: 0.9vw;
@@ -420,7 +420,7 @@ header .navlinks ul li a {
 }
 
 #about .experience h3 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: #009ff6;
     margin-bottom: 2%;
     font-size: 1vw;
