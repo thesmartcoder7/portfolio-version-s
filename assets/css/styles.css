@@ -9,23 +9,23 @@
 /* - - - - - font declaration - - - - - */
 @font-face {
     font-family: "Monsterrat";
+    src: url("../fonts/Montserrat/Montserrat.woff") format("woff");
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/Montserrat/Montserrat.woff") format("woff");
 }
 
 @font-face {
     font-family: "Monsterrat";
+    src: url("../fonts/Montserrat--Bold/Montserrat--Bold.woff") format("woff");
     font-style: bold;
     font-weight: 700;
-    src: url("../fonts/Montserrat--Bold/Montserrat--Bold.woff") format("woff");
 }
 
 @font-face {
     font-family: "Monsterrat";
+    src: url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff");
     font-style: bolder;
     font-weight: 900;
-    src: url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff");
 }
 
 body {
