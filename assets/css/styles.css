@@ -726,6 +726,14 @@ header .navlinks ul li a {
     backdrop-filter: blur(0.5vw);
 }
 
+@media screen and (max-width: 500px) {
+    #about .experience .tabs ul li .link:hover {
+        transition: 0.2s ease-in-out;
+        background-color: transparent;
+        backdrop-filter: blur(1vw);
+    }
+}
+
 #about .experience .tabs ul li .light {
     width: 1vw;
     height: 1vw;
@@ -737,9 +745,22 @@ header .navlinks ul li a {
     z-index: 0;
 }
 
+@media screen and (max-width: 500px) {
+    #about .experience .tabs ul li .light {
+        width: 2vw;
+        height: 2vw;
+        background-color: #009ff6;
+        border-radius: 50%;
+        position: absolute;
+        top: 30%;
+        left: 17%;
+        z-index: 0;
+    }
+}
+
 #about .experience .tabs ul li .active-link {
     background-color: transparent;
-    backdrop-filter: blur(0.5vw);
+    backdrop-filter: blur(1vw);
 }
 
 .Crescent360,
