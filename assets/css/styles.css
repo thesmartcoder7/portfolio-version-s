@@ -26,10 +26,10 @@ body {
     width: 10vw;
     height: 10vw;
     border-radius: 50%;
-    background-color: #066abd;
+    background-color: #0086f3;
     position: absolute;
     z-index: 0;
-    box-shadow: 1vw 1vw 3vw 3vw #006eff73;
+    box-shadow: 1vw 1vw 5vw 5vw #1236668e;
 }
 
 main {
