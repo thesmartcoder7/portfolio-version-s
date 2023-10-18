@@ -14,6 +14,8 @@ body {
     background-color: #03001b;
     background-color: #000713;
     background-color: #000313;
+    background-color: #050c1b;
+    background-color: #000313;
     overflow-x: hidden;
     /* background-image: url("../images/background1.webp");
     background-repeat: no-repeat;
@@ -25,10 +27,10 @@ body {
     width: 10vw;
     height: 10vw;
     border-radius: 50%;
-    background-color: #1b5f9e;
+    background-color: #002555;
     position: absolute;
     z-index: 0;
-    box-shadow: 1vw 1vw 5vw 5vw #0825499d;
+    box-shadow: 1vw 1vw 5vw 5vw #0a256ec7;
 }
 
 main {
