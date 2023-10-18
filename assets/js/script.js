@@ -34,3 +34,29 @@ iAmBrandLink.addEventListener("click", () => {
     icreationsJd.classList.remove("active-description");
     iAmbrandJd.classList.add("active-description");
 });
+
+
+const followDiv = document.getElementById('followdiv');
+const divWidth = followDiv.offsetWidth;
+const divHeight = followDiv.offsetHeight;
+
+// Function to update the div's position based on mouse coordinates
+function moveDiv(event) {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+
+    const divX = mouseX - divWidth / 2;
+    const divY = mouseY - divHeight / 2;
+
+    followDiv.style.left = divX + 'px';
+    followDiv.style.top = divY + 'px';
+
+    const scrollX = window.scrollX || window.pageXOffset;
+    const scrollY = window.scrollY || window.pageYOffset;
+
+    followDiv.style.left = divX + scrollX + 'px';
+    followDiv.style.top = divY + scrollY + 'px';
+}
+
+// Attach the event listener to the document to track mouse movement
+document.addEventListener('mousemove', moveDiv);

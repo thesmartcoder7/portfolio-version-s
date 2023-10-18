@@ -14,17 +14,30 @@ body {
     background-color: #03001b;
     background-color: #000713;
     background-color: #000313;
-    background-color: #000711;
+    background-color: #000411;
     /* background-image: url("../images/background1.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover; */
 }
 
+#followdiv{
+    width: 10vw;
+    height: 10vw;
+    background-color: #00a6ff;
+    position: absolute;
+    z-index: 0;
+}
+
 main {
     width: 100%;
     height: auto;
     padding: 3% 10%;
+    /* background-color: #000711; */
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    backdrop-filter: blur(10vw);
 }
 
 /* - - - - - hero section styling - - - - - */
