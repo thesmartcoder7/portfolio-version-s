@@ -1,5 +1,5 @@
 /* - - - - - font import - - - - - */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+ @import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Montserrat:wght@600;700&display=swap');
 
 /* - - - - - browser resets - - - - - */
 * {
@@ -10,11 +10,8 @@
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #03001b;
-    background-color: #000713;
-    background-color: #000313;
-    background-color: #050c1b;
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 400;
     background-color: #000313;
     overflow-x: hidden;
     /* background-image: url("../images/background1.webp");
@@ -27,10 +24,10 @@ body {
     width: 10vw;
     height: 10vw;
     border-radius: 50%;
-    background-color: #002555;
+    background-color: #062661;
     position: absolute;
     z-index: 0;
-    box-shadow: 1vw 1vw 5vw 5vw #0a256ec7;
+    box-shadow: 1vw 1vw 5vw 5vw #0c2a7ac7;
 }
 
 main {
@@ -253,17 +250,16 @@ header .navlinks ul li a {
 .hero-content .text h2 {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.1vw;
-    color: #dcdddd;
+    color: #afbaca;
     font-size: 2vw;
     padding-top: 5%;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
 }
 
 @media screen and (max-width: 500px) {
     .hero-content .text h2 {
         font-family: "Montserrat", sans-serif;
         letter-spacing: 0.1vw;
-        color: #dcdddd;
         font-size: 4vw;
         padding-top: 5%;
         padding-bottom: 2%;
@@ -271,8 +267,9 @@ header .navlinks ul li a {
 }
 
 .hero-content .text p {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Cantarell", sans-serif;
     color: #dcdddd;
+    color: #919db1;
     line-height: 1.8vw;
     font-size: 0.9vw;
 }
@@ -344,19 +341,23 @@ header .navlinks ul li a {
 
 .hero-content .text .cta a {
     margin-right: 10%;
-    background-color: #009ff6;
-    color: #fff;
+    background: linear-gradient(to bottom right, #5a6f972d 100% , #4b65b8c7 0%);
+    color: #919db1;
     font-size: 0.9vw;
     border-radius: 0.2vw;
     outline: none;
-    border: none;
-    padding: 3% 6%;
+    border: 0.1vw solid #ffffff11;
+    backdrop-filter: blur(2vw);
+    padding: 3% 7%;
+}
+.hero-content .text .cta a:hover {
+    background: linear-gradient(to bottom right, #5a6f9748 100% , #4b65b8c7 0%);
 }
 @media screen and (max-width: 500px) {
     .hero-content .text .cta a {
+       
         margin-right: 10%;
         background-color: #009ff6;
-        color: #fff;
         font-size: 3vw;
         border-radius: 0.2vw;
         outline: none;
@@ -390,8 +391,8 @@ header .navlinks ul li a {
 .hero-content .image img {
     width: 35vw;
     position: absolute;
-    top: 0;
-    left: 5%;
+    top: -10%;
+    left: 10%;
     z-index: 2;
 }
 
@@ -647,7 +648,7 @@ header .navlinks ul li a {
 }
 
 #about .why p {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Cantarell", sans-serif;
     color: #dcdddd;
     line-height: 1.8vw;
     font-size: 0.9vw;
