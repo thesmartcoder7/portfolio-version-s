@@ -11,10 +11,14 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-image: url("../images/background1.webp");
+    background-color: #03001b;
+    background-color: #000713;
+    background-color: #000313;
+    background-color: #000711;
+    /* background-image: url("../images/background1.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
 }
 
 main {
