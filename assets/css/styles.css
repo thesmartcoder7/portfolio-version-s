@@ -12,13 +12,32 @@
 body {
     font-family: 'Cantarell', sans-serif;
     font-weight: 400;
-    background-color: #000313;
+    background-color: #000018;
+    background-color: #051125;
+    background-color: #111827;
     overflow-x: hidden;
     /* background-image: url("../images/background1.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover; */
 }
+
+body::-webkit-scrollbar {
+    cursor: pointer;
+    width: 0.6vw;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom right, #5a6f972d 100% , #4b65b8c7 0%);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    border-radius: 0.5vw;
+    background-color: rgba(35, 63, 95, 0.733);
+    outline: none;
+  }
 
 #followdiv{
     width: 10vw;
@@ -38,7 +57,7 @@ main {
     position: relative;
     z-index: 1;
     background-color: transparent;
-    backdrop-filter: blur(10vw);
+    backdrop-filter: blur(12vw);
     overflow: hidden;
 }
 
@@ -108,7 +127,7 @@ header .logo h1 a {
 }
 
 header .logo h1 .m {
-    color: #dcdddd;
+    color: #a0abbb;
 }
 
 header .navlinks ul {
@@ -125,7 +144,7 @@ header .navlinks ul li {
 
 header .navlinks ul li a {
     text-decoration: none;
-    color: #dcdddd;
+    color: #a0abbb;
     font-size: 0.9vw;
 }
 
@@ -171,7 +190,7 @@ header .navlinks ul li a {
 
     header .navlinks ul li a {
         text-decoration: none;
-        color: #dcdddd;
+        color: #a0abbb;
         font-size: 5vw;
     }
 }
@@ -234,7 +253,7 @@ header .navlinks ul li a {
     }
 }
 .hero-content .text span {
-    color: #dcdddd;
+    color: #a0abbb;
     margin-left: 2%;
     font-size: 0.9vw;
 }
@@ -250,7 +269,7 @@ header .navlinks ul li a {
 .hero-content .text h2 {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.1vw;
-    color: #afbaca;
+    color: #a0abbb;
     font-size: 2vw;
     padding-top: 5%;
     padding-bottom: 3%;
@@ -268,8 +287,7 @@ header .navlinks ul li a {
 
 .hero-content .text p {
     font-family: "Cantarell", sans-serif;
-    color: #dcdddd;
-    color: #919db1;
+    color: #a0abbb;
     line-height: 1.8vw;
     font-size: 0.9vw;
 }
@@ -277,7 +295,6 @@ header .navlinks ul li a {
 @media screen and (max-width: 500px) {
     .hero-content .text p {
         font-family: "Montserrat", sans-serif;
-        color: #dcdddd;
         line-height: 5vw;
         font-size: 3vw;
     }
@@ -342,7 +359,7 @@ header .navlinks ul li a {
 .hero-content .text .cta a {
     margin-right: 10%;
     background: linear-gradient(to bottom right, #5a6f972d 100% , #4b65b8c7 0%);
-    color: #919db1;
+    color: #a0abbb;
     font-size: 0.9vw;
     border-radius: 0.2vw;
     outline: none;
@@ -383,15 +400,23 @@ header .navlinks ul li a {
 .hero-content .image .circle {
     width: 40vw;
     height: 40vw;
-    color: #009ff6;
+    color: #37496b1e;
+    backdrop-filter: blur(1vw);
     position: absolute;
     top: 10%;
 }
 
+.hero-content .image .circle path{
+    stroke: #8790a128;
+    stroke-width:0.005vw;
+    stroke-linejoin: round;
+}
+
+
 .hero-content .image img {
     width: 35vw;
     position: absolute;
-    top: -10%;
+    top: -5%;
     left: 10%;
     z-index: 2;
 }
@@ -480,7 +505,8 @@ header .navlinks ul li a {
     border-radius: 50%;
     width: 5vw;
     height: 5vw;
-    background-color: #1b1d22;
+    /* background-color: #1b1d22; */
+   
 }
 
 .hero-content .image .tech svg {
@@ -503,8 +529,8 @@ header .navlinks ul li a {
 }
 
 .javascript {
-    width: 2vw;
-    height: 2vw;
+    width: 1.5vw;
+    height: 1.5vw;
     top: 20%;
     left: 12%;
     z-index: 5;
@@ -562,6 +588,16 @@ header .navlinks ul li a {
     right: -15%;
 }
 
+.svg-container{
+    width: 80%;
+    height: 90%;
+    display: grid;
+    place-items: center;
+    background-color: #202c46;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
 /* - - - - - about me styling - - - - - */
 .title {
     margin-top: 10%;
@@ -592,7 +628,7 @@ header .navlinks ul li a {
 }
 
 .title span {
-    color: #dcdddd;
+    color: #a0abbb;
     margin-left: 1%;
     font-size: 0.9vw;
 }
@@ -649,14 +685,13 @@ header .navlinks ul li a {
 
 #about .why p {
     font-family: "Cantarell", sans-serif;
-    color: #dcdddd;
+    color: #a0abbb;
     line-height: 1.8vw;
     font-size: 0.9vw;
 }
 @media screen and (max-width: 500px) {
     #about .why p {
         font-family: "Montserrat", sans-serif;
-        color: #dcdddd;
         line-height: 5vw;
         font-size: 3vw;
     }
@@ -727,7 +762,7 @@ header .navlinks ul li a {
     font-size: 0.9vw;
     border-radius: 1.5vw 0 0 1.5vw;
     padding: 10%;
-    color: #dcdddd;
+    color: #a0abbb;
     background-color: #1b1d22;
     z-index: 4;
 }
@@ -737,7 +772,6 @@ header .navlinks ul li a {
         font-size: 3vw;
         border-radius: 1.5vw 0 0 1.5vw;
         padding: 10%;
-        color: #dcdddd;
         background-color: #1b1d22;
         z-index: 4;
     }
@@ -832,13 +866,12 @@ header .navlinks ul li a {
 }
 
 #about .experience .active-description p {
-    color: #dcdddd;
+    color: #a0abbb;
     font-size: 0.9vw;
     line-height: 1.8vw;
 }
 @media screen and (max-width: 500px) {
     #about .experience .active-description p {
-        color: #dcdddd;
         font-size: 3vw;
         line-height: 5vw;
     }
