@@ -593,7 +593,7 @@ header .navlinks ul li a {
     height: 90%;
     display: grid;
     place-items: center;
-    background-color: #202c46;
+    background-color: #202c46e7;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
@@ -671,7 +671,7 @@ header .navlinks ul li a {
 #about .why h3 {
     font-family: "Montserrat", sans-serif;
     color: #009ff6;
-    margin-bottom: 2%;
+    margin-bottom: 1vw;
     font-size: 1.5vw;
 }
 @media screen and (max-width: 500px) {
@@ -709,7 +709,7 @@ header .navlinks ul li a {
 #about .experience h3 {
     font-family: "Montserrat", sans-serif;
     color: #009ff6;
-    margin-bottom: 2%;
+    margin-bottom: 2vw;
     font-size: 1.5vw;
 }
 @media screen and (max-width: 500px) {
@@ -723,7 +723,7 @@ header .navlinks ul li a {
 
 #about .experience .tabs {
     width: 100%;
-    padding-left: 5%;
+    /* padding-left: 1vw; */
     display: flex;
 }
 @media screen and (max-width: 500px) {
@@ -752,7 +752,6 @@ header .navlinks ul li a {
 #about .experience .tabs ul li {
     cursor: pointer;
     padding: 5%;
-    /* background-color: transparent; */
     position: relative;
     z-index: 5;
 }
@@ -760,10 +759,10 @@ header .navlinks ul li a {
 #about .experience .tabs ul li .link {
     position: relative;
     font-size: 0.9vw;
-    border-radius: 1.5vw 0 0 1.5vw;
-    padding: 10%;
+    border-left: 0.15vw solid transparent;
+    padding: 5% 15%;
+    margin-bottom: 0.5vw;
     color: #a0abbb;
-    background-color: #1b1d22;
     z-index: 4;
 }
 @media screen and (max-width: 500px) {
@@ -780,7 +779,7 @@ header .navlinks ul li a {
 #about .experience .tabs ul li .link:hover {
     transition: 0.2s ease-in-out;
     background-color: transparent;
-    backdrop-filter: blur(0.5vw);
+    border-left-color: #009ff6;
 }
 
 @media screen and (max-width: 500px) {
@@ -800,6 +799,7 @@ header .navlinks ul li a {
     top: 30%;
     left: 10%;
     z-index: 0;
+    display: none;
 }
 
 @media screen and (max-width: 500px) {
@@ -818,6 +818,7 @@ header .navlinks ul li a {
 #about .experience .tabs ul li .active-link {
     background-color: transparent;
     backdrop-filter: blur(1vw);
+    border-left-color: #009ff6;
 }
 
 .Crescent360,
